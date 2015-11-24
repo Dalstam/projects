@@ -55,8 +55,17 @@ body{
     color:floralwhite;
 }
 
-address{
+.address{
     font-size:80%;
     margin:0px;
     color:#0f0f0f;
 }
+/*#col{*/
+/*    border:solid 1px;*/
+/*}*/
+/*#form1{*/
+/*    background-color:red !import;*/
+/*}*/
+/*#row{*/
+/*    border:solid;*/
+/*}*/
