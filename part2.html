@@ -4,6 +4,42 @@
         <title> 
         
         </title>
+        <style type="text/css">
+            body{
+                font-family: verdana;
+            }
+            fieldset{
+                background-color: lightyellow;
+                border:10px solid yellow;
+                margin-bottom:10px;
+                width:720px;
+            }
+            label{
+                width:180px;
+                display:inline-block;
+                text-align:right;
+                vertical-align:top;
+            }
+            .textArea{
+                width:360px;
+                height:50px;
+            }
+            .labelCb{
+                width:auto;
+            }
+            .labelRngL{
+                text-align:center;
+                vertical-align:top;
+                background-color:red;
+                color:white;
+            }
+            .labelRngR{
+                text-align:center;
+                vertical-align:top;
+                background-color:purple;
+                color:white;
+            }
+        </style>
     </head>
     <body>
         <h1>Please Enter Your Details For Our Dating Website</h1>
@@ -11,7 +47,7 @@
         <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
             <fieldset>
                 <legend>Your Face</legend>
-                    <label for="fileToUpload"></label>Your Image:</label>
+                    <label for="fileToUpload">Your Image:</label>
                     <input type="file" name="fileToUpload" id="fileToUpload" required/><br>
                     <label for="preview">Image preview:</label>
                     <img id="preview" name="preview" src=""></img>
@@ -22,9 +58,9 @@
                 <label for="nameF" >Name:</label>
                 <input type="text" id="nameF" name="name" required/><br>
                 <label for="male">Gender:</label>
-                <label for="male">Male</label>
+                <label class="labelCb" for="male">Male</label>
                 <input type="radio" name="gender" id="male" value="Male" required/>
-                <label for="female">Female</label>
+                <label  class="labelCb" for="female">Female</label>
                 <input type="radio" name="gender" id="female" value="Female"/><br>
                 <label for="age">Age:</label>
                 <input type="number" name="age" id="age" required/><br>
@@ -46,9 +82,9 @@
             <fieldset>
                 <legend>Your indicators</legend>
                 <label for="height">Height:</label>
-                Short <input type="range" min="0" max="100" id="height"/>Tall<br>
+                <span class="labelRngL">Short</span> <input type="range" min="0" max="100" id="height"/><span class="labelRngR">Tall</span><br>
                 <label for="salary">Salary:</label>
-                Poor <input type="range" min="0" max="100" id="salary"/>Rich
+                <span class="labelRngL"> Poor </span> <input type="range" min="0" max="100" id="salary"/><span class="labelRngR">Rich</span>
             </fieldset>
             <br>
             <fieldset>
@@ -58,13 +94,13 @@
                 <label for="mob">Mobile:</label>
                 <input type="tel" name="mob" id="mob"/><br>
                 <label for="address">Address</label>
-                <textarea name="address" id="address" /><br>
+                <input type="textarea" class="textArea" name="address" id="address" /> <br>
                 <label for="emailCB">Method to contact you:</label> 
-                <label for="emailCB">Email</label>
+                <label class="labelCb" for="emailCB">Email</label>
                 <input type="checkbox" name="emailCB" id="emailCB"/>
-                <label for="whatsapp">Whatsapp</label>
+                <label class="labelCb" for="whatsapp">Whatsapp</label>
                 <input type="checkbox" name="WhatsappCB" id="whatsappCB"/>
-                <label for="inApp">In-app chat</label>
+                <label class="labelCb" for="inApp">In-app chat</label>
                 <input type="checkbox" name="inAppCB" id="inAppCB"/>In-app chat
         
             </fieldset>
