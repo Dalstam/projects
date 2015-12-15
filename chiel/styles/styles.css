@@ -1,0 +1,47 @@
+.body {
+    background-image: url(../img/craft.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+.row-footer {
+    margin-bottom: 70px;
+    background-color: yellow;
+}
+
+
+
+.navbar-fixed-bottom {
+    background-color: #FA2E00 !important;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.well-lg {
+    color: black;
+    position: absolute;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*font-size: 55px;*/
+}
+
+.btn-blue {
+    background-color: #3B5998;
+    color: #FA2E00;
+}
+
+.caret-red {
+    color: #FA2E00;
+}
+/*.navbar-brand{*/
+/*    background-color: #3B5998;*/
+/*    color: #FA2E00;*/
+    /*opacity:1;*/
+    /*width:/auto;*/
+    /*padding-left:25%;*/
+
+/*}*/
+.dropdown-menu {
+  width: 100%; 
+}
